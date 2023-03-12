@@ -1,0 +1,52 @@
+Modular arithmatic 
+
+basically what happens is we have to do certain calculations in our coding and sometimes the result is so large that it cannot be stored even in the 
+largest datatypes 
+
+for int max capcity is 10^9 
+the largest data type that we know is long long int it can store more powers than int approx 10 ^20
+
+Modulo properties help us in getting the result stored in int or long datatype 
+properties :
+1. (a+b)%M = ((a+%M)+(b%M))%M  -> the result will come in same as the lhs 
+2. (a*b)%m = (()) same but change the sign in btw the two entity 
+3. Incase of - you need to add the M and change the sign 
+4. (A/b)%M = ((a%M *(b inverse)%M))%m
+
+
+
+
+In THE QUESTION what you need to do is the 
+Har step pe % M 
+Upar m ko declare karo long long mein then give the value that is given in the qustion  (mostly : 10^9+7 )as this number is very close to Integer Maximum 
+ 
+
+
+ GCD (HCF) PROGRAMMING EUCLID 
+ overview 
+4  and 12 -> 4 
+12, 18 -> 6 
+
+how to find gcd ?
+prime factorsion karo
+select the minimum power among the two digits of every factor 
+this is the GCD 
+
+
+LCM 
+max of power baki sab process same 
+
+
+Intersting properties: a*b/g.cd= lcm
+
+euclid divide krte jao then make the remainder the divisor and divisor the dividened 
+
+
+code : recursion 
+int gcd (int a , int b ){
+    if (remainder =O ){
+        return divisor ;    // divisor is the gcd 
+    }
+    // a % b = remainder 
+    return gcd(B,a%b)
+}
